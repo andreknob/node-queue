@@ -1,4 +1,4 @@
-import mailQueue from "../lib/Queue";
+import Queue from "../lib/Queue";
 
 export default {
     async store(req, res) {
@@ -10,7 +10,7 @@ export default {
             password
         };
 
-        await mailQueue.add({ user });
+        await Queue.add('RegistrationMail', { user });
 
         return res.json(user);
     }
