@@ -9,7 +9,9 @@
     "dev:queue": "nodemon src/queue.js"
   },
   "dependencies": {
+    "@bull-board/express": "^4.10.2",
     "bull": "^4.10.2",
+    "bull-board": "^2.1.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemailer": "^6.8.0"
